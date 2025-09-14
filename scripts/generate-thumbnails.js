@@ -17,10 +17,11 @@ if (!fs.existsSync(THUMBNAILS_DIR)) {
 async function generateThumbnails() {
   try {
     const files = fs.readdirSync(ASSETS_DIR);
-    const imageFiles = files.filter(file => 
-      file.toLowerCase().endsWith('.jpg') || 
-      file.toLowerCase().endsWith('.jpeg') || 
-      file.toLowerCase().endsWith('.png')
+    const imageFiles = files.filter(
+      (file) =>
+        file.toLowerCase().endsWith('.jpg') ||
+        file.toLowerCase().endsWith('.jpeg') ||
+        file.toLowerCase().endsWith('.png')
     );
 
     console.log(`Found ${imageFiles.length} images to process...`);
@@ -39,7 +40,7 @@ async function generateThumbnails() {
         await sharp(inputPath)
           .resize(400, 400, {
             fit: 'cover',
-            position: 'center'
+            position: 'center',
           })
           .jpeg({ quality: 80 })
           .toFile(outputPath);
