@@ -112,8 +112,8 @@ const PasswordProtection: React.FC<PasswordProtectionProps> = ({ onPasswordCorre
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  // You can change this password to whatever you want
-  const CORRECT_PASSWORD = 'Pescara2025';
+  // Password is now stored in environment variable for security
+  const CORRECT_PASSWORD = import.meta.env.VITE_GALLERY_PASSWORD || 'defaultpassword';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
