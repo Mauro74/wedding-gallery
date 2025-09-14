@@ -17,6 +17,10 @@ const Title = styled.h1`
   font-weight: 400;
   font-style: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
 `;
 
 const Subtitle = styled.p`
