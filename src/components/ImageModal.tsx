@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { WeddingPhoto } from '../types/index';
 
@@ -69,8 +69,8 @@ const CloseButton = styled.button`
   background: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
@@ -157,6 +157,10 @@ const ImageModal: React.FC<ImageModalProps> = ({
   currentIndex,
   totalImages,
 }) => {
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
+  const [isSwipeEnabled, setIsSwipeEnabled] = useState<boolean>(true);
+
   // Prevent body scroll when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -170,6 +174,38 @@ const ImageModal: React.FC<ImageModalProps> = ({
     };
   }, [isOpen]);
 
+  // Handle touch events for swipe gestures
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (!isSwipeEnabled) return;
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isSwipeEnabled) return;
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!isSwipeEnabled) return;
+
+    const swipeThreshold = 50; // Minimum distance for a swipe
+    const swipeDistance = touchStartX.current - touchEndX.current;
+
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+      // Temporarily disable swipe to prevent rapid firing
+      setIsSwipeEnabled(false);
+      setTimeout(() => setIsSwipeEnabled(true), 300);
+
+      if (swipeDistance > 0) {
+        // Swiped left - go to next image
+        onNext();
+      } else {
+        // Swiped right - go to previous image
+        onPrevious();
+      }
+    }
+  };
+
   // Close modal when clicking on overlay
   const handleOverlayClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
@@ -181,7 +217,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
 
   return (
     <ModalOverlay isOpen={isOpen} onClick={handleOverlayClick}>
-      <ModalContent>
+      <ModalContent onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <CloseButton onClick={onClose} aria-label="Close modal">
           ×
         </CloseButton>
