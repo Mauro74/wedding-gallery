@@ -13,6 +13,7 @@
     "remove-alt-property": "node scripts/remove-alt-property.js"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.888.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.8"

@@ -19,6 +19,10 @@ dist-ssr
 .env.test.local
 .env.production.local
 
+# Large image folders (now hosted on S3)
+public/images/
+src/assets/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
