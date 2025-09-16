@@ -9,19 +9,25 @@
     "id": 2,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (8).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (8).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 3,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (11).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (11).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 4,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (30).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (30).jpg",
-    "category": "ceremony"
+    "category": "reception"
+  },
+  {
+    "id": 4,
+    "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (30).jpg",
+    "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (30).jpg",
+    "category": "reception"
   },
   {
     "id": 5,
@@ -33,19 +39,19 @@
     "id": 6,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (50).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (50).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 7,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (52).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (52).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 8,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (56).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (56).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 9,
@@ -57,19 +63,19 @@
     "id": 10,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (65).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (65).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 11,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (73).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (73).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 12,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (74).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (74).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 13,
@@ -81,19 +87,19 @@
     "id": 14,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (79).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (79).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 15,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (80).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (80).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 16,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (85).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (85).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 17,
@@ -105,19 +111,19 @@
     "id": 18,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (95).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (95).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 19,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (96).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (96).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 20,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (99).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (99).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 21,
@@ -129,19 +135,19 @@
     "id": 22,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (107).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (107).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 23,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (113).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (113).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 24,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (118).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (118).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 25,
@@ -153,19 +159,19 @@
     "id": 26,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (122).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (122).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 27,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (125).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (125).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 28,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (128).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (128).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 29,
@@ -177,19 +183,19 @@
     "id": 30,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (133).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (133).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 31,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (137).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (137).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 32,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (138).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (138).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 33,
@@ -201,19 +207,19 @@
     "id": 34,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (140).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (140).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 35,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (141).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (141).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 36,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (143).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (143).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 37,
@@ -225,19 +231,19 @@
     "id": 38,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (150).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (150).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 39,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (152).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (152).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 40,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (156).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (156).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 41,
@@ -249,19 +255,19 @@
     "id": 42,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (158).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (158).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 43,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (159).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (159).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 44,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (162).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (162).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 45,
@@ -273,19 +279,19 @@
     "id": 46,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (165).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (165).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 47,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (166).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (166).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 48,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (169).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (169).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 49,
@@ -297,19 +303,19 @@
     "id": 50,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (173).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (173).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 51,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (174).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (174).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 52,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (177).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (177).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 53,
@@ -321,19 +327,19 @@
     "id": 54,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (182).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (182).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 55,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (183).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (183).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 56,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (184).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (184).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 57,
@@ -345,19 +351,19 @@
     "id": 58,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (186).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (186).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 59,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (190).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (190).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 60,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (195).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (195).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 61,
@@ -369,19 +375,19 @@
     "id": 62,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (200).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (200).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 63,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (204).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (204).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 64,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (209).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (209).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 65,
@@ -393,19 +399,19 @@
     "id": 66,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (213).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (213).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 67,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (218).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (218).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 68,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (219).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (219).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 69,
@@ -417,19 +423,19 @@
     "id": 70,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (222).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (222).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 71,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (223).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (223).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 72,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (224).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (224).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 73,
@@ -441,19 +447,19 @@
     "id": 74,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (228).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (228).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 75,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (229).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (229).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 76,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (231).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (231).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 77,
@@ -465,31 +471,31 @@
     "id": 78,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (236).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (236).jpg",
-    "category": "ceremony"
+    "category": "portraits"
   },
   {
     "id": 79,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (242).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (242).jpg",
-    "category": "ceremony"
+    "category": "party"
   },
   {
     "id": 80,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (244).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (244).jpg",
-    "category": "ceremony"
+    "category": "reception"
   },
   {
     "id": 81,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (252).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (252).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 83,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (259).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (259).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 84,
@@ -501,25 +507,25 @@
     "id": 139,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (409).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (409).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 85,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (261).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (261).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 86,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (262).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (262).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 87,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (265).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (265).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 88,
@@ -531,7 +537,7 @@
     "id": 89,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (275).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (275).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 90,
@@ -543,19 +549,19 @@
     "id": 91,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (280).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (280).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 92,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (285).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (285).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 93,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (289).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (289).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 94,
@@ -567,19 +573,19 @@
     "id": 95,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (297).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (297).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 96,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (298).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (298).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 97,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (303).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (303).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 98,
@@ -591,19 +597,19 @@
     "id": 99,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (308).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (308).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 100,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (310).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (310).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 101,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (312).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (312).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 102,
@@ -615,25 +621,25 @@
     "id": 103,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (318).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (318).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 155,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (461).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (461).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 104,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (321).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (321).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 105,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (328).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (328).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 106,
@@ -645,31 +651,31 @@
     "id": 107,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (337).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (337).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 108,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (339).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (339).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 109,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (345).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (345).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 110,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (348).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (348).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 111,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (352).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (352).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 112,
@@ -681,19 +687,19 @@
     "id": 82,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (255).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (255).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 113,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (355).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (355).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 114,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (356).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (356).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 116,
@@ -705,25 +711,25 @@
     "id": 122,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (370).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (370).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 130,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (387).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (387).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 131,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (388).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (388).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 138,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (408).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (408).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 140,
@@ -735,31 +741,31 @@
     "id": 141,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (411).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (411).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 115,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (357).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (357).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 117,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (364).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (364).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 118,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (366).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (366).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 119,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (367).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (367).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 120,
@@ -771,13 +777,13 @@
     "id": 121,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (369).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (369).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 123,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (372).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (372).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 124,
@@ -789,19 +795,19 @@
     "id": 125,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (376).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (376).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 126,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (378).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (378).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 127,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (380).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (380).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 128,
@@ -813,7 +819,7 @@
     "id": 129,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (386).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (386).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 132,
@@ -825,19 +831,19 @@
     "id": 133,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (395).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (395).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 134,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (396).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (396).jpg",
-    "category": "reception"
+    "category": "portraits"
   },
   {
     "id": 135,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (397).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (397).jpg",
-    "category": "reception"
+    "category": "party"
   },
   {
     "id": 136,
@@ -849,7 +855,7 @@
     "id": 137,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (405).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (405).jpg",
-    "category": "reception"
+    "category": "ceremony"
   },
   {
     "id": 142,
@@ -861,19 +867,19 @@
     "id": 143,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (414).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (414).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 144,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (416).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (416).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 145,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (419).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (419).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 146,
@@ -885,19 +891,19 @@
     "id": 147,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (429).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (429).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 148,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (430).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (430).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 149,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (437).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (437).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 150,
@@ -909,19 +915,19 @@
     "id": 151,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (443).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (443).jpg",
-    "category": "portraits"
+    "category": "party"
   },
   {
     "id": 152,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (445).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (445).jpg",
-    "category": "portraits"
+    "category": "reception"
   },
   {
     "id": 153,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (453).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (453).jpg",
-    "category": "portraits"
+    "category": "ceremony"
   },
   {
     "id": 154,
@@ -933,13 +939,13 @@
     "id": 156,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (462).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (462).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 158,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (485).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (485).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 159,
@@ -951,25 +957,25 @@
     "id": 160,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (496).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (496).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 161,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (499).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (499).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 157,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (470).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (470).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 162,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (502).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (502).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 163,
@@ -981,19 +987,19 @@
     "id": 164,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (509).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (509).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 165,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (511).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (511).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 166,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (519).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (519).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 167,
@@ -1005,19 +1011,19 @@
     "id": 168,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (525).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (525).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 169,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (527).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (527).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 170,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (533).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (533).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 171,
@@ -1029,25 +1035,25 @@
     "id": 172,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (548).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (548).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 173,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (549).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (549).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 174,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (553).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (553).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 175,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (554).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (554).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 176,
@@ -1059,19 +1065,19 @@
     "id": 177,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (563).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (563).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 178,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (564).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (564).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 179,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (574).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (574).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 180,
@@ -1083,19 +1089,19 @@
     "id": 181,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (580).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (580).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 182,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (584).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (584).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 183,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (585).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (585).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 184,
@@ -1107,25 +1113,25 @@
     "id": 185,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (589).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (589).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 186,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (590).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (590).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 187,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (592).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (592).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 188,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (594).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (594).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 189,
@@ -1137,19 +1143,19 @@
     "id": 213,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (597).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (597).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 190,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (601).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (601).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 191,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (602).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (602).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 192,
@@ -1161,19 +1167,19 @@
     "id": 193,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (617).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (617).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 194,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (620).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (620).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 196,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (623).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (623).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 214,
@@ -1185,25 +1191,19 @@
     "id": 197,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (629).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (629).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 198,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (632).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (632).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 199,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (637).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (637).jpg",
-    "category": "party"
-  },
-  {
-    "id": 212,
-    "src": "https://karen-maurizio-wedding-photos.s3.eu-west-2.amazonaws.com/images/KM (638).jpg",
-    "thumbnail": "https://karen-maurizio-wedding-photos.s3.eu-west-2.amazonaws.com/images/thumbnails/KM (638).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 202,
@@ -1215,19 +1215,19 @@
     "id": 203,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (643).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (643).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 204,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (644).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (644).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 205,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (645).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (645).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 206,
@@ -1239,19 +1239,19 @@
     "id": 207,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (649).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (649).jpg",
-    "category": "party"
+    "category": "reception"
   },
   {
     "id": 208,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (650).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (650).jpg",
-    "category": "party"
+    "category": "ceremony"
   },
   {
     "id": 209,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (651).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (651).jpg",
-    "category": "party"
+    "category": "portraits"
   },
   {
     "id": 210,
@@ -1263,6 +1263,12 @@
     "id": 211,
     "src": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/KM (653).jpg",
     "thumbnail": "https://karen-maurizio-wedding-photos.s3.amazonaws.com/images/thumbnails/KM (653).jpg",
+    "category": "reception"
+  },
+  {
+    "id": 212,
+    "src": "https://karen-maurizio-wedding-photos.s3.eu-west-2.amazonaws.com/images/KM (638).jpg",
+    "thumbnail": "https://karen-maurizio-wedding-photos.s3.eu-west-2.amazonaws.com/images/thumbnails/KM (638).jpg",
     "category": "party"
   }
 ]

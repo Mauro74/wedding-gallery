@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 interface LazyImageProps {
   src: string;
@@ -26,12 +25,12 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Image = styled.img<{ isLoaded: boolean }>`
+const Image = styled.img<{ isloaded: boolean }>`
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: ${(props) => (props.isLoaded ? 1 : 0)};
+  opacity: ${(props) => (props.isloaded ? 1 : 0.9)};
 `;
 
 const LoadingPlaceholder = styled.div`
@@ -51,6 +50,40 @@ const LoadingPlaceholder = styled.div`
     100% {
       background-position: -200% 0;
     }
+  }
+`;
+
+const ErrorPlaceholder = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #4a4a4a, #2a2a2a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d4d4c8;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, #5a5a5a, #3a3a3a);
+  }
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
+
+  .text {
+    opacity: 0.8;
+    font-size: 0.8rem;
   }
 `;
 
@@ -75,33 +108,26 @@ const ImageOverlay = styled.div`
 const LazyImage: React.FC<LazyImageProps> = ({ thumbnail, onClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const { elementRef, hasIntersected } = useIntersectionObserver({
-    threshold: 0.1,
-    rootMargin: '100px',
-  });
 
   const handleLoad = () => {
     setIsLoaded(true);
+    setHasError(false);
   };
 
   const handleError = () => {
     setHasError(true);
-    setIsLoaded(true);
   };
 
   return (
-    <ImageContainer ref={elementRef} onClick={onClick}>
+    <ImageContainer onClick={onClick}>
       {!isLoaded && !hasError && <LoadingPlaceholder />}
-      {hasIntersected && (
-        <Image
-          src={thumbnail}
-          alt="Wedding photo"
-          loading="lazy"
-          isLoaded={isLoaded}
-          onLoad={handleLoad}
-          onError={handleError}
-        />
+      {hasError && (
+        <ErrorPlaceholder>
+          <div className="icon">📷</div>
+          <div className="text">Failed to load</div>
+        </ErrorPlaceholder>
       )}
+      <Image src={thumbnail} alt="Wedding photo" isloaded={isLoaded} onLoad={handleLoad} onError={handleError} />
       <ImageOverlay></ImageOverlay>
     </ImageContainer>
   );

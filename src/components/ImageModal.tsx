@@ -4,7 +4,7 @@ import { WeddingPhoto } from '../types/index';
 
 interface ImageModalProps {
   photo: WeddingPhoto;
-  isOpen: boolean;
+  isopen: boolean;
   onClose: () => void;
   onPrevious: () => void;
   onNext: () => void;
@@ -12,14 +12,14 @@ interface ImageModalProps {
   totalImages: number;
 }
 
-const ModalOverlay = styled.div<{ isOpen: boolean }>`
+const ModalOverlay = styled.div<{ isopen: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.95);
-  display: ${(props) => (props.isOpen ? 'flex' : 'none')};
+  display: ${(props) => (props.isopen ? 'flex' : 'none')};
   align-items: center;
   justify-content: center;
   z-index: 1000;
@@ -150,7 +150,7 @@ const ImageCounter = styled.p`
 
 const ImageModal: React.FC<ImageModalProps> = ({
   photo,
-  isOpen,
+  isopen,
   onClose,
   onPrevious,
   onNext,
@@ -163,7 +163,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
 
   // Prevent body scroll when modal is open
   useEffect(() => {
-    if (isOpen) {
+    if (isopen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
@@ -172,7 +172,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
     return () => {
       document.body.style.overflow = 'unset';
     };
-  }, [isOpen]);
+  }, [isopen]);
 
   // Handle touch events for swipe gestures
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -213,10 +213,10 @@ const ImageModal: React.FC<ImageModalProps> = ({
     }
   };
 
-  if (!isOpen) return null;
+  if (!isopen) return null;
 
   return (
-    <ModalOverlay isOpen={isOpen} onClick={handleOverlayClick}>
+    <ModalOverlay isopen={isopen} onClick={handleOverlayClick}>
       <ModalContent onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <CloseButton onClick={onClose} aria-label="Close modal">
           ×

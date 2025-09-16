@@ -10,19 +10,23 @@ const __dirname = path.dirname(__filename);
 
 // Configuration
 const S3_BUCKET_NAME = 'karen-maurizio-wedding-photos';
-const S3_REGION = 'us-east-1';
-const S3_BASE_URL = `https://${S3_BUCKET_NAME}.s3.amazonaws.com`;
+const S3_REGION = 'eu-west-2';
+const S3_BASE_URL = `https://${S3_BUCKET_NAME}.s3.${S3_REGION}.amazonaws.com`;
 
 const NEW_IMAGES_DIR = path.join(__dirname, '..', 'new-images');
 const TEMP_THUMBNAILS_DIR = path.join(__dirname, '..', 'temp-thumbnails');
 const WEDDING_PHOTOS_PATH = path.join(__dirname, '..', 'src', 'data', 'wedding-photos.json');
 
-const s3Client = new S3Client({ region: S3_REGION });
-const CATEGORIES = ['ceremony', 'reception', 'portraits', 'candid'];
+const s3Client = new S3Client({
+  region: S3_REGION,
+  endpoint: `https://s3.${S3_REGION}.amazonaws.com`,
+  forcePathStyle: false,
+});
+const CATEGORIES = ['ceremony', 'reception', 'portraits', 'party'];
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
 function askQuestion(question) {
@@ -41,7 +45,6 @@ async function uploadToS3(filePath, s3Key) {
       Key: s3Key,
       Body: fileContent,
       ContentType: 'image/jpeg',
-      ACL: 'public-read'
     });
     await s3Client.send(command);
     return true;
@@ -65,7 +68,7 @@ async function generateThumbnail(inputPath, outputPath) {
 }
 
 function getNextId(existingPhotos) {
-  const maxId = Math.max(...existingPhotos.map(photo => photo.id));
+  const maxId = Math.max(...existingPhotos.map((photo) => photo.id));
   return maxId + 1;
 }
 
@@ -75,10 +78,10 @@ async function selectCategory(fileName) {
   CATEGORIES.forEach((cat, index) => {
     console.log(`  ${index + 1}. ${cat}`);
   });
-  
+
   const answer = await askQuestion('Enter category number (1-4): ');
   const categoryIndex = parseInt(answer) - 1;
-  
+
   if (categoryIndex >= 0 && categoryIndex < CATEGORIES.length) {
     return CATEGORIES[categoryIndex];
   } else {
@@ -103,8 +106,7 @@ async function processNewImagesInteractive() {
       fs.mkdirSync(TEMP_THUMBNAILS_DIR, { recursive: true });
     }
 
-    const newImageFiles = fs.readdirSync(NEW_IMAGES_DIR)
-      .filter(file => file.toLowerCase().endsWith('.jpg'));
+    const newImageFiles = fs.readdirSync(NEW_IMAGES_DIR).filter((file) => file.toLowerCase().endsWith('.jpg'));
 
     if (newImageFiles.length === 0) {
       console.log('📸 No new images found in new-images directory.');
@@ -146,7 +148,7 @@ async function processNewImagesInteractive() {
       console.log('  ☁️  Uploading to S3...');
       const mainImageKey = `images/${fileName}`;
       const thumbnailKey = `images/thumbnails/${fileName}`;
-      
+
       await uploadToS3(resizedPath, mainImageKey);
       await uploadToS3(thumbnailPath, thumbnailKey);
 
@@ -155,7 +157,7 @@ async function processNewImagesInteractive() {
         id: nextId++,
         src: `${S3_BASE_URL}/${mainImageKey}`,
         thumbnail: `${S3_BASE_URL}/${thumbnailKey}`,
-        category: category
+        category: category,
       };
 
       newPhotoEntries.push(newEntry);
@@ -169,7 +171,7 @@ async function processNewImagesInteractive() {
     // Update JSON file
     console.log('\n📝 Updating wedding-photos.json...');
     const updatedPhotos = [...existingPhotos, ...newPhotoEntries];
-    
+
     const backupPath = WEDDING_PHOTOS_PATH.replace('.json', `.backup-${Date.now()}.json`);
     fs.writeFileSync(backupPath, existingPhotosData);
     fs.writeFileSync(WEDDING_PHOTOS_PATH, JSON.stringify(updatedPhotos, null, 2));
@@ -180,7 +182,7 @@ async function processNewImagesInteractive() {
       fs.mkdirSync(processedDir);
     }
 
-    newImageFiles.forEach(fileName => {
+    newImageFiles.forEach((fileName) => {
       const oldPath = path.join(NEW_IMAGES_DIR, fileName);
       const newPath = path.join(processedDir, fileName);
       fs.renameSync(oldPath, newPath);
@@ -193,7 +195,6 @@ async function processNewImagesInteractive() {
     console.log(`git add src/data/wedding-photos.json`);
     console.log(`git commit -m "Add ${newImageFiles.length} new wedding photos"`);
     console.log(`git push origin main`);
-
   } catch (error) {
     console.error('❌ Error processing images:', error.message);
   } finally {

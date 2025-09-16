@@ -7,8 +7,8 @@ const __dirname = path.dirname(__filename);
 
 // Configuration - Update these values
 const S3_BUCKET_NAME = 'karen-maurizio-wedding-photos';
-const S3_REGION = 'us-east-1'; // Change to your bucket's region
-const S3_BASE_URL = `https://${S3_BUCKET_NAME}.s3.amazonaws.com`;
+const S3_REGION = 'eu-west-2'; // Updated to match actual bucket region
+const S3_BASE_URL = `https://${S3_BUCKET_NAME}.s3.${S3_REGION}.amazonaws.com`;
 
 const WEDDING_PHOTOS_PATH = path.join(__dirname, '..', 'src', 'data', 'wedding-photos.json');
 

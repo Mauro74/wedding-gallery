@@ -18,10 +18,12 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+aws.txt
 
 # Large image folders (now hosted on S3)
 public/images/
 src/assets/
+new-images/
 
 # Editor directories and files
 .vscode/*

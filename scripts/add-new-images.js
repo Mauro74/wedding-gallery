@@ -9,30 +9,33 @@ const __dirname = path.dirname(__filename);
 
 // Configuration
 const S3_BUCKET_NAME = 'karen-maurizio-wedding-photos';
-const S3_REGION = 'us-east-1';
-const S3_BASE_URL = `https://${S3_BUCKET_NAME}.s3.amazonaws.com`;
+const S3_REGION = 'eu-west-2'; // Updated to match actual bucket region
+const S3_BASE_URL = `https://${S3_BUCKET_NAME}.s3.${S3_REGION}.amazonaws.com`;
 
 // Local directories for new images
 const NEW_IMAGES_DIR = path.join(__dirname, '..', 'new-images');
 const TEMP_THUMBNAILS_DIR = path.join(__dirname, '..', 'temp-thumbnails');
 const WEDDING_PHOTOS_PATH = path.join(__dirname, '..', 'src', 'data', 'wedding-photos.json');
 
-// Initialize S3 client
-const s3Client = new S3Client({ region: S3_REGION });
+// Initialize S3 client with explicit endpoint
+const s3Client = new S3Client({
+  region: S3_REGION,
+  endpoint: `https://s3.${S3_REGION}.amazonaws.com`,
+  forcePathStyle: false,
+});
 
 // Categories for new images
-const CATEGORIES = ['ceremony', 'reception', 'portraits', 'candid'];
+const CATEGORIES = ['ceremony', 'reception', 'portraits', 'party'];
 
 async function uploadToS3(filePath, s3Key) {
   try {
     const fileContent = fs.readFileSync(filePath);
-    
+
     const command = new PutObjectCommand({
       Bucket: S3_BUCKET_NAME,
       Key: s3Key,
       Body: fileContent,
       ContentType: 'image/jpeg',
-      ACL: 'public-read'
     });
 
     await s3Client.send(command);
@@ -60,7 +63,7 @@ async function generateThumbnail(inputPath, outputPath) {
 }
 
 function getNextId(existingPhotos) {
-  const maxId = Math.max(...existingPhotos.map(photo => photo.id));
+  const maxId = Math.max(...existingPhotos.map((photo) => photo.id));
   return maxId + 1;
 }
 
@@ -69,7 +72,7 @@ function promptForCategory() {
   CATEGORIES.forEach((cat, index) => {
     console.log(`${index + 1}. ${cat}`);
   });
-  
+
   // For automation, we'll cycle through categories
   // In a real scenario, you might want to use readline for user input
   return CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)];
@@ -93,8 +96,7 @@ async function processNewImages() {
     }
 
     // Get new image files
-    const newImageFiles = fs.readdirSync(NEW_IMAGES_DIR)
-      .filter(file => file.toLowerCase().endsWith('.jpg'));
+    const newImageFiles = fs.readdirSync(NEW_IMAGES_DIR).filter((file) => file.toLowerCase().endsWith('.jpg'));
 
     if (newImageFiles.length === 0) {
       console.log('📸 No new images found in new-images directory.');
@@ -148,7 +150,7 @@ async function processNewImages() {
         id: nextId++,
         src: `${S3_BASE_URL}/${mainImageKey}`,
         thumbnail: `${S3_BASE_URL}/${thumbnailKey}`,
-        category: category
+        category: category,
       };
 
       newPhotoEntries.push(newEntry);
@@ -162,7 +164,7 @@ async function processNewImages() {
     // 6. Update JSON file
     console.log('📝 Updating wedding-photos.json...');
     const updatedPhotos = [...existingPhotos, ...newPhotoEntries];
-    
+
     // Create backup
     const backupPath = WEDDING_PHOTOS_PATH.replace('.json', `.backup-${Date.now()}.json`);
     fs.writeFileSync(backupPath, existingPhotosData);
@@ -177,7 +179,7 @@ async function processNewImages() {
       fs.mkdirSync(processedDir);
     }
 
-    newImageFiles.forEach(fileName => {
+    newImageFiles.forEach((fileName) => {
       const oldPath = path.join(NEW_IMAGES_DIR, fileName);
       const newPath = path.join(processedDir, fileName);
       fs.renameSync(oldPath, newPath);
@@ -190,7 +192,6 @@ async function processNewImages() {
     console.log(`git add src/data/wedding-photos.json`);
     console.log(`git commit -m "Add ${newImageFiles.length} new wedding photos"`);
     console.log(`git push origin main`);
-
   } catch (error) {
     console.error('❌ Error processing new images:', error.message);
   } finally {
