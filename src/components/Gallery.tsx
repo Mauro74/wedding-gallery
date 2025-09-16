@@ -102,6 +102,19 @@ const Gallery: React.FC = () => {
     preloadImages();
   }, []);
 
+  // Smooth scroll to top when filter changes
+  useEffect(() => {
+    // Use setTimeout to ensure the scroll happens after React has updated the DOM
+    const scrollTimer = setTimeout(() => {
+      window.scrollTo({
+        top: 220,
+        behavior: 'smooth',
+      });
+    }, 50);
+
+    return () => clearTimeout(scrollTimer);
+  }, [selectedCategories]);
+
   const openModal = useCallback((index: number) => {
     setSelectedImageIndex(index);
   }, []);
@@ -118,12 +131,6 @@ const Gallery: React.FC = () => {
       setSelectedCategories([category]);
     }
     setSelectedImageIndex(null);
-
-    // Smooth scroll to top when filter changes
-    window.scrollTo({
-      top: 220,
-      behavior: 'smooth',
-    });
   };
 
   const navigateImage = useCallback(
