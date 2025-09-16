@@ -4,26 +4,10 @@ import { weddingPhotos } from '../data/photos';
 import ImageModal from './ImageModal';
 import LazyImage from './LazyImage';
 import CategoryFilter from './CategoryFilter';
-// import CoverImageSrc from '../assets/KM (497).jpg';
 
 const GalleryContainer = styled.div`
   margin: 2rem auto;
 `;
-
-// const CoverImage = styled.div`
-//   width: 100%;
-//   height: 100vh;
-//   margin-bottom: 2rem;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: -1;
-//   background-image: url('${CoverImageSrc}');
-//   background-size: cover;
-//   background-position: center;
-//   filter: blur(4px) hue-rotate(126deg) grayscale(0.6);
-// `;
 
 const Title = styled.h1`
   text-align: center;
@@ -58,7 +42,7 @@ const PhotoGrid = styled.div`
   padding: 1px 0;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 

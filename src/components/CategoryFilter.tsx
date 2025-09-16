@@ -9,7 +9,7 @@ const FilterContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 2rem 0 0;
-  padding: 1.5rem;
+  padding: 1rem;
   background: rgba(42, 85, 63, 0.8);
   border-block: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -21,18 +21,6 @@ const FilterContainer = styled.div`
     padding: 1rem;
   }
 `;
-
-// const FilterLabel = styled.span`
-//   color: #d4d4c8;
-//   font-size: 1.1rem;
-//   font-weight: 500;
-//   margin-right: 1.5rem;
-
-//   @media (max-width: 768px) {
-//     margin-right: 0;
-//     margin-bottom: 0.5rem;
-//   }
-// `;
 
 const CheckboxGroup = styled.div`
   display: flex;
@@ -113,7 +101,7 @@ const PhotoCount = styled.span`
 
 const Logo = styled.div<{ isVisible: boolean }>`
   position: absolute;
-  top: 14px;
+  top: 6px;
   left: 24px;
   z-index: 1001;
   font-family: 'Luxurious Script', cursive, 'serif';
@@ -183,7 +171,6 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
       <Logo isVisible={isFilterSticky} onClick={handleLogoClick}>
         K + M
       </Logo>
-      {/* <FilterLabel>Filter by Category:</FilterLabel> */}
       <CheckboxGroup>
         <CheckboxItem key="all">
           <Checkbox type="checkbox" checked={isAllSelected} onChange={() => onCategoryChange('all')} />
