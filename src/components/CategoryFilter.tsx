@@ -10,7 +10,7 @@ const FilterContainer = styled.div`
   align-items: center;
   margin: 2rem 0 0;
   padding: 1.5rem;
-  background: rgba(42, 85, 63, 0.6);
+  background: rgba(42, 85, 63, 0.8);
   border-block: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

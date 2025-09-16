@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
+import { MdArrowBackIos, MdArrowForwardIos, MdOutlineClose } from 'react-icons/md';
 import { WeddingPhoto } from '../types/index';
 
 interface ImageModalProps {
@@ -45,6 +46,12 @@ const ModalContent = styled.div`
     max-height: 100vh;
     padding: 60px 20px 80px;
   }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 10px;
+  }
 `;
 
 const ModalImage = styled.img`
@@ -60,13 +67,26 @@ const ModalImage = styled.img`
     border-radius: 4px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    width: auto;
+    height: 90vh;
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+  @media (max-height: 500px) and (orientation: landscape) {
+    height: 85vh;
+    max-height: 85vh;
+  }
 `;
 
 const CloseButton = styled.button`
   position: absolute;
   top: 0px;
   right: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 50%;
   width: 30px;
@@ -80,27 +100,21 @@ const CloseButton = styled.button`
   justify-content: center;
   transition: all 0.2s ease;
 
-  &:hover {
-    background: white;
-    transform: scale(1.1);
-  }
-
   @media (max-width: 768px) {
-    top: 0px;
+    top: 10px;
     right: 10px;
   }
 `;
 
 const NavigationButton = styled.button<{ direction: 'left' | 'right' }>`
   position: absolute;
-  top: 50%;
+  top: calc(50% - 15px);
   ${(props) => props.direction}: 0px;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   font-size: 24px;
   color: #333;
@@ -110,27 +124,15 @@ const NavigationButton = styled.button<{ direction: 'left' | 'right' }>`
   transition: all 0.2s ease;
   z-index: 1001;
 
-  &:hover {
-    background: white;
-    transform: translateY(-50%) scale(1.1);
-  }
-
   @media (max-width: 768px) {
     ${(props) => props.direction}: 0px;
-    width: 40px;
-    height: 40px;
+
     font-size: 20px;
   }
 
   @media (max-width: 480px) {
     ${(props) => props.direction}: 0px;
-    top: auto;
-    bottom: 20px;
     transform: none;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 `;
 
@@ -219,17 +221,17 @@ const ImageModal: React.FC<ImageModalProps> = ({
     <ModalOverlay isopen={isopen} onClick={handleOverlayClick}>
       <ModalContent onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <CloseButton onClick={onClose} aria-label="Close modal">
-          ×
+          <MdOutlineClose />
         </CloseButton>
 
         <NavigationButton direction="left" onClick={onPrevious} aria-label="Previous image">
-          ‹
+          <MdArrowBackIos viewBox="-3 0 24 24" size={16} />
         </NavigationButton>
 
         <ModalImage src={photo.src} alt="Wedding photo" loading="eager" />
 
         <NavigationButton direction="right" onClick={onNext} aria-label="Next image">
-          ›
+          <MdArrowForwardIos viewBox="0 0 24 24" size={16} />
         </NavigationButton>
 
         <ImageInfo>
