@@ -30,7 +30,7 @@ const Title = styled.h1`
   font-size: 6rem;
   color: #eaeaea;
   margin-bottom: 10px;
-  font-family: 'Luxurious Script', cursive;
+  font-family: 'Luxurious Script', cursive, 'serif';
   font-weight: 400;
   font-style: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -65,6 +65,8 @@ const PhotoGrid = styled.div`
 const Gallery: React.FC = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [isFilterSticky, setIsFilterSticky] = useState<boolean>(false);
+  const [hasUserInteracted, setHasUserInteracted] = useState<boolean>(false);
 
   // Get unique categories and photo counts
   const { categories, photoCounts } = useMemo(() => {
@@ -102,8 +104,11 @@ const Gallery: React.FC = () => {
     preloadImages();
   }, []);
 
-  // Smooth scroll to top when filter changes
+  // Smooth scroll to top when filter changes (but not on initial load)
   useEffect(() => {
+    // Skip scroll on initial render, only scroll after user interaction
+    if (!hasUserInteracted) return;
+
     // Use setTimeout to ensure the scroll happens after React has updated the DOM
     const scrollTimer = setTimeout(() => {
       window.scrollTo({
@@ -113,7 +118,7 @@ const Gallery: React.FC = () => {
     }, 50);
 
     return () => clearTimeout(scrollTimer);
-  }, [selectedCategories]);
+  }, [selectedCategories, hasUserInteracted]);
 
   const openModal = useCallback((index: number) => {
     setSelectedImageIndex(index);
@@ -124,6 +129,9 @@ const Gallery: React.FC = () => {
   }, []);
 
   const handleCategoryChange = (category: string) => {
+    // Mark that user has interacted with filters
+    setHasUserInteracted(true);
+
     if (category === 'all') {
       setSelectedCategories([]);
     } else {
@@ -131,6 +139,12 @@ const Gallery: React.FC = () => {
       setSelectedCategories([category]);
     }
     setSelectedImageIndex(null);
+  };
+
+  const handleStickyChange = () => {
+    // Show logo when scroll position is at least 220px
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setIsFilterSticky(scrollTop >= 220);
   };
 
   const navigateImage = useCallback(
@@ -182,6 +196,8 @@ const Gallery: React.FC = () => {
         onCategoryChange={handleCategoryChange}
         photoCounts={photoCounts}
         totalPhotos={weddingPhotos.length}
+        onStickyChange={handleStickyChange}
+        isFilterSticky={isFilterSticky}
       />
       <PhotoGrid>
         {filteredPhotos.map((photo, index) => (

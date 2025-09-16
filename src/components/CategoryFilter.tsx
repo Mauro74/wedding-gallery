@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 
 const FilterContainer = styled.div`
@@ -111,12 +111,35 @@ const PhotoCount = styled.span`
   color: #b3a279;
 `;
 
+const Logo = styled.div<{ isVisible: boolean }>`
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  z-index: 1001;
+  font-family: 'Luxurious Script', cursive, 'serif';
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  opacity: ${(props) => (props.isVisible ? 1 : 0)};
+  visibility: ${(props) => (props.isVisible ? 'visible' : 'hidden')};
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+`;
+
 interface CategoryFilterProps {
   categories: string[];
   selectedCategories: string[];
   onCategoryChange: (category: string) => void;
   photoCounts: Record<string, number>;
   totalPhotos: number;
+  onStickyChange?: () => void;
+  isFilterSticky: boolean;
 }
 
 const CategoryFilter: React.FC<CategoryFilterProps> = ({
@@ -125,11 +148,41 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   onCategoryChange,
   photoCounts,
   totalPhotos,
+  onStickyChange,
+  isFilterSticky,
 }) => {
   const isAllSelected = selectedCategories.length === 0;
+  const filterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!onStickyChange) return;
+
+    const handleScroll = () => {
+      onStickyChange();
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    // Check initial state
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [onStickyChange]);
+
+  const handleLogoClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
-    <FilterContainer>
+    <FilterContainer ref={filterRef}>
+      <Logo isVisible={isFilterSticky} onClick={handleLogoClick}>
+        K + M
+      </Logo>
       {/* <FilterLabel>Filter by Category:</FilterLabel> */}
       <CheckboxGroup>
         <CheckboxItem key="all">
