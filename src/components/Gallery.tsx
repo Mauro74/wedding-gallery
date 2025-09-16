@@ -118,6 +118,12 @@ const Gallery: React.FC = () => {
       setSelectedCategories([category]);
     }
     setSelectedImageIndex(null);
+
+    // Smooth scroll to top when filter changes
+    window.scrollTo({
+      top: 220,
+      behavior: 'smooth',
+    });
   };
 
   const navigateImage = useCallback(
